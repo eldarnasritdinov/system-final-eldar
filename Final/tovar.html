@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tovar</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+            width: 100%;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .product {
+            width: 90%;
+            max-width: 800px;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .product img {
+            height: 300px;
+            width: 300px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .product h2 {
+            font-size: 1.5rem;
+            margin: 10px 0;
+            color: #333;
+        }
+
+        .product p {
+            font-size: 1rem;
+            color: #666;
+            margin: 10px 0;
+            text-align: center;
+            line-height: 1.5;
+        }
+
+        .product button {
+            padding: 10px 20px;
+            background-color: #ff9500;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-top: 20px;
+        }
+
+        .product button:hover {
+            background-color: #b35c00;
+        }
+    </style>
+</head>
+<body>
+    <div class="product">
+        <img src="https://object.pscloud.io/cms/cms/Photo/img_0_24_325_4_6.png">
+        <h2>Product Title</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi autem excepturi a, quasi nemo fugit, incidunt ducimus qui sunt voluptates aut perspiciatis laboriosam aperiam vero dolores ut provident ratione. Non asperiores earum consectetur, est minus provident vitae dolor ex fugiat nemo vel dolorum! Delectus dolore, qui aliquid adipisci magnam maiores soluta quod? Aperiam tempore ipsa excepturi facilis aspernatur eum non, earum dolorum, beatae nemo qui sed nam autem repellat et! Dolor repellendus possimus, qui repellat itaque nihil quam ducimus unde, nisi reprehenderit perferendis, repudiandae reiciendis eaque atque necessitatibus quasi eum non amet nemo consequatur officiis voluptatibus tempora asperiores quos. Quas!</p>
+        <p>PRICE $$$</p>
+        <button onclick="eldarAlert()">Добавить в корзину</button>
+    </div>
+    <script>
+        function eldarAlert() {
+            alert("Добавлено в корзину!");
+        }
+    </script>
+</body>
+</html>
